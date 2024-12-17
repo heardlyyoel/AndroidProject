@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6FAF9F9"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Foto Profil -->
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/userp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/btnUploadPhoto"
+                android:scaleType="centerCrop"
+                app:cornerRadius="50dp" />
+
+            <!-- Tombol Unggah Foto -->
+            <Button
+                android:id="@+id/btnUploadPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Unggah Foto"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/primary"
+                android:layout_marginTop="8dp" />
+
+            <!-- Form Data Profil -->
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@android:color/transparent"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:hint="Name" />
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@android:color/transparent"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:hint="Email" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@android:color/transparent"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:hint="Password" />
+
+            <EditText
+                android:id="@+id/txtNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@android:color/transparent"
+                android:inputType="phone"
+                android:padding="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:hint="Phone Number" />
+
+            <EditText
+                android:id="@+id/txtMajor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@android:color/transparent"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:hint="Major" />
+
+            <Button
+                android:id="@+id/btnEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/primary"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="8dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

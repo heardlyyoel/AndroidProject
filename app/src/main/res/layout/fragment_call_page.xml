@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".callPage">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Favorite Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/loveblue"
+                    android:contentDescription="Favorite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Add Favorite"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <!-- Call Item 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/woman1"
+                        app:shapeAppearanceOverlay="@style/CircleImageViewStyle" />
+
+                    <TextView
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:text="Crush"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/callBackButton1"
+                        android:layout_width="58dp"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Call Back"
+                        android:src="@drawable/baseline_call_made_24" />
+
+                    <ImageButton
+                        android:id="@+id/videoCallButton1"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/baseline_video_chat_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:15 AM"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Call Status for Call Item 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Call Accepted"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textSize="14sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="4dp"/>
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/acceptcall" />
+                </LinearLayout>
+
+                <!-- Call Item 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sanji"
+                        app:shapeAppearanceOverlay="@style/CircleImageViewStyle" />
+
+                    <TextView
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:text="Sanji"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/callBackButton2"
+                        android:layout_width="58dp"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Call Back"
+                        android:src="@drawable/baseline_call_made_24" />
+
+                    <ImageButton
+                        android:id="@+id/videoCallButton2"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/baseline_video_chat_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:45 AM"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Call Status for Call Item 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Call Accepted"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textSize="14sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="4dp"/>
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/acceptcall" />  <!-- Ganti dengan gambar call kecil hijau -->
+                </LinearLayout>
+
+                <!-- Call Item 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/luffy"
+                        app:shapeAppearanceOverlay="@style/CircleImageViewStyle" />
+
+                    <TextView
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:text="Monkey .D. Luffy"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/callBackButton3"
+                        android:layout_width="58dp"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Call Back"
+                        android:src="@drawable/baseline_call_made_24" />
+
+                    <ImageButton
+                        android:id="@+id/videoCallButton3"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/baseline_video_chat_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12:00 PM"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Call Status for Call Item 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Missed Call"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textSize="14sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="4dp"/>
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/missedcall" />
+                </LinearLayout>
+
+                <!-- Call Item 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ace"
+                        app:shapeAppearanceOverlay="@style/CircleImageViewStyle" />
+
+                    <TextView
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:text="Brother"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/callBackButton4"
+                        android:layout_width="58dp"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Call Back"
+                        android:src="@drawable/baseline_call_made_24" />
+
+                    <ImageButton
+                        android:id="@+id/videoCallButton4"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/baseline_video_chat_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12:00 PM"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Call Status for Call Item 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Missed Call"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textSize="14sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="4dp"/>
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/missedcall" />
+                </LinearLayout>
+
+                <!-- Call Item 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/brook"
+                        app:shapeAppearanceOverlay="@style/CircleImageViewStyle" />
+
+                    <TextView
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:text="Brook"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/callBackButton5"
+                        android:layout_width="58dp"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Call Back"
+                        android:src="@drawable/baseline_call_made_24" />
+
+                    <ImageButton
+                        android:id="@+id/videoCallButton5"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/baseline_video_chat_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:45 AM"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Call Status for Call Item 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Call Accepted"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textSize="14sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="4dp"/>
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/acceptcall" />
+                </LinearLayout>
+
+                <!-- Call Item 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/man"
+                        app:shapeAppearanceOverlay="@style/CircleImageViewStyle" />
+
+                    <TextView
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:text="Reynhat"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/callBackButton6"
+                        android:layout_width="58dp"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Call Back"
+                        android:src="@drawable/baseline_call_made_24" />
+
+                    <ImageButton
+                        android:id="@+id/videoCallButton6"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/baseline_video_chat_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 Days ago"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Call Status for Call Item 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Missed Call"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textSize="14sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="4dp"/>
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/missedcall" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PresUniv~Talk"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/imageButtonSearch"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/search"
+            android:contentDescription="Search Icon"
+            android:scaleType="centerInside"
+            android:layout_marginEnd="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnBluetooth"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/bluetooth"
+            android:contentDescription="Bluetooth Icon"
+            android:scaleType="centerInside"
+            android:layout_marginEnd="8dp" />
+        <ImageButton
+            android:id="@+id/lightSensorImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/light"
+            android:contentDescription="Light Sensor Icon"
+            android:scaleType="centerInside" />
+
+
+
+        <ImageButton
+            android:id="@+id/btnProfile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/user"
+            android:contentDescription="User Icon"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+
+    <!-- Fragment Section -->
+    <FrameLayout
+        android:id="@+id/fragmentContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="8dp"
+        tools:ignore="MissingClass" />
+
+    <!-- Bottom Navigation Icons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#FFFFFF">
+
+        <!-- Home Button -->
+        <LinearLayout
+            android:id="@+id/homeLayout"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/homeImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/home" />
+        </LinearLayout>
+
+        <!-- Chat Button -->
+        <LinearLayout
+            android:id="@+id/chatLayout"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/chatImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/chat" />
+        </LinearLayout>
+
+        <!-- Stories Button -->
+        <LinearLayout
+            android:id="@+id/storiesLayout"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/storiesImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/stories" />
+        </LinearLayout>
+
+        <!-- Call Button -->
+        <LinearLayout
+            android:id="@+id/callLayout"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/callImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/phone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

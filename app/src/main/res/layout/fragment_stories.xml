@@ -1,0 +1,222 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="ExtraText">
+
+        <ImageView
+            android:id="@+id/imageProfile2"
+            android:layout_width="51dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageHomyped"
+            app:srcCompat="@drawable/yoel2" />
+
+        <TextView
+            android:id="@+id/textProfile2"
+            android:layout_width="41dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:text="Yoel"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/imageProfile2"
+            app:layout_constraintTop_toTopOf="@id/imageProfile2" />
+
+        <ImageView
+            android:id="@+id/imageMenu"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/menu"
+            app:layout_constraintBottom_toBottomOf="@id/imageProfile2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.963"
+            app:layout_constraintStart_toEndOf="@id/textProfile2"
+            app:layout_constraintTop_toTopOf="@id/imageProfile2"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imageHomyped"
+            android:layout_width="409dp"
+            android:layout_height="231dp"
+            app:srcCompat="@drawable/homyped"
+            app:layout_constraintTop_toBottomOf="@id/textProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <!-- Pesan Relax -->
+        <LinearLayout
+            android:id="@+id/relaxLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/imageHomyped"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/textRelaxMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Take your time and listen to music with us. Click the Button of Music -->"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:paddingEnd="8dp"
+                android:maxLines="2"
+                android:ellipsize="none" />
+
+            <ImageButton
+                android:id="@+id/buttonPlayMusic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/playmusic"
+                android:contentDescription="Play Music"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="742dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageProfile2">
+
+            <VideoView
+                android:id="@+id/videoPosting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/buttonPlayPause"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:src="@drawable/play"
+                android:scaleType="fitCenter" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            app:srcCompat="@drawable/yoel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="73dp" />
+
+        <ImageView
+            android:id="@+id/imagePlus"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="44dp"
+            app:layout_constraintBottom_toBottomOf="@id/imageProfile"
+            app:layout_constraintEnd_toEndOf="@id/imageProfile"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@id/imageProfile"
+            app:layout_constraintTop_toTopOf="@id/imageProfile"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/plus" />
+
+        <ImageView
+            android:id="@+id/imageClose"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            app:layout_constraintBottom_toBottomOf="@id/imageHomyped"
+            app:layout_constraintEnd_toEndOf="@id/imageHomyped"
+            app:layout_constraintHorizontal_bias="0.961"
+            app:layout_constraintStart_toStartOf="@id/imageHomyped"
+            app:layout_constraintTop_toTopOf="@id/imageHomyped"
+            app:layout_constraintVertical_bias="0.047"
+            app:srcCompat="@drawable/close" />
+
+        <ImageView
+            android:id="@+id/imageWindah"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="28dp"
+            app:layout_constraintStart_toEndOf="@id/imageProfile"
+            app:layout_constraintTop_toTopOf="@id/imageProfile"
+            app:srcCompat="@drawable/windah" />
+
+        <ImageView
+            android:id="@+id/imageWindah2"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toEndOf="@id/imageWindah"
+            app:layout_constraintTop_toTopOf="@id/imageWindah"
+            app:srcCompat="@drawable/windah2" />
+
+        <TextView
+            android:id="@+id/textFriends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="My gf"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/imageWindah"
+            app:layout_constraintTop_toBottomOf="@id/imageWindah" />
+
+        <TextView
+            android:id="@+id/textProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:text="Your story"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@id/imageProfile"
+            app:layout_constraintTop_toBottomOf="@id/imageProfile" />
+
+        <TextView
+            android:id="@+id/textBrother"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="Brother"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@id/imageWindah2"
+            app:layout_constraintTop_toBottomOf="@id/imageWindah2" />
+
+        <!-- Replaced FloatingActionButton with Button for camera -->
+        <Button
+            android:id="@+id/buttonCamera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/camera"
+            tools:layout_editor_absoluteX="345dp"
+            tools:layout_editor_absoluteY="115dp"
+            tools:ignore="MissingConstraints" /> <!-- Set your camera icon drawable -->
+        android:contentDescription="Open Camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

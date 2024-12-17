@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    implementation 'com.google.android.material:material:1.8.0'
+    <style name="CircleImageViewStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item> <!-- Ini membuat radius menjadi bulat sempurna -->
+    </style>
+
+</resources>

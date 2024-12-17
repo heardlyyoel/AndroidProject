@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#01AED8</color>
+    <color name="navy_blue">#000080</color>
+    <color name="midnight_blue">#191970</color>
+    <color name="AFBlue">#5D8AA8</color>
+    <color name="DenimBlue">#1560BD</color>
+    <color name="Gray">#808080</color>
+    <color name="blueDark">#010B28</color>
+    <color name="textWhite">#CFCFD0</color>
+
+
+    <!-- New color additions -->
+    <color name="colorPrimary">#01AED8</color> <!-- Warna utama untuk tombol dan header -->
+    <color name="colorGray">#808080</color>   <!-- Warna abu-abu untuk border dan elemen sekunder -->
+    <color name="colorWhite">#FFFFFF</color>   <!-- Warna putih untuk background dan teks -->
+    <color name="colorBlack">#000000</color>   <!-- Warna hitam untuk teks utama -->
+    <color name="colorDarkGray">#6E6E6E</color> <!-- Warna abu-abu gelap untuk teks sekunder -->
+    <color name="colorButtonText">#FFFFFF</color> <!-- Warna teks untuk tombol update -->
+</resources>

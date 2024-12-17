@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "924631406606",
+    "project_id": "putchatv1-743c1",
+    "storage_bucket": "putchatv1-743c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924631406606:android:10f040d9c2b827a1ad845f",
+        "android_client_info": {
+          "package_name": "com.example.testchatfragment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJUCcMd_H8p1cz-39fvnY7BpL1MNTHs-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
